@@ -67,3 +67,6 @@ if( isset( $_GET[ 'Login' ] ) ) {
 }
 ?>
 ```
+
+
+![Proof](proof.gif)
