@@ -51,6 +51,11 @@ if( isset( $_GET[ 'Login' ] ) ) {
 		$row    = mysqli_fetch_assoc( $result );
 		$avatar = $row["avatar"];
 		// Login successful
+```
+```diff
+! CWE-79 Необходимо предовратить межсайтовый скриптинг, например использовать параметризацию, кодирование ввода и проверка
+```
+```
 		$html .= "<p>Welcome to the password protected area {$user}</p>";
 		$html .= "<img src=\"{$avatar}\" />";
 	}
